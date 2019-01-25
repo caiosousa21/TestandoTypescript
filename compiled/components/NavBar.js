@@ -1,13 +1,10 @@
-import React from 'react';
+import * as React from 'react';
 import { View, TouchableOpacity, StyleSheet, Text } from 'react-native';
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
-import {Creators as NavBarActions} from '../store/actions/navBar'
-
-
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { Creators as NavBarActions } from '../store/actions/navBar';
 function NavBar(props) {
-    return (
-        <View style={styles.navbar}>
+    return (<View style={styles.navbar}>
             <TouchableOpacity style={styles.button} onPress={props.selectedSearch}>
                 <Text>Search</Text>
             </TouchableOpacity>
@@ -20,10 +17,8 @@ function NavBar(props) {
             <TouchableOpacity style={styles.button} onPress={props.selectedSettings}>
                 <Text>{props.tela}</Text>
             </TouchableOpacity>
-        </View>
-    );
+        </View>);
 }
-
 const styles = StyleSheet.create({
     navbar: {
         display: 'flex',
@@ -35,13 +30,9 @@ const styles = StyleSheet.create({
         height: 30,
         marginTop: 10
     }
-})
-
+});
 const mapStateToProps = state => ({
-    tela:state.navBar.tela
-})
-
-const mapDispatchToProps = dispatch => bindActionCreators(NavBarActions, dispatch)
-
-export default connect(mapStateToProps, mapDispatchToProps)(NavBar)
-
+    tela: state.navBar.tela
+});
+const mapDispatchToProps = dispatch => bindActionCreators(NavBarActions, dispatch);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
