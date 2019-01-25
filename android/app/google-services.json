@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "954092072217",
+    "firebase_url": "https://brincando-native-e2015.firebaseio.com",
+    "project_id": "brincando-native-e2015",
+    "storage_bucket": "brincando-native-e2015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954092072217:android:e383ae51f9e9d62b",
+        "android_client_info": {
+          "package_name": "com.caio.brincandonative"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954092072217-vnv5fta7mij424grvq4kf41he6mrkbgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.caio.brincandonative",
+            "certificate_hash": "e737ba9481e44190880321a1ed02e2e8eee924df"
+          }
+        },
+        {
+          "client_id": "954092072217-phf8trs0vsikob5f5nd7c7eh69oi929l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDKVZ-pbOFKIBgjThndqiBWrhojQoYSrU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954092072217-phf8trs0vsikob5f5nd7c7eh69oi929l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
